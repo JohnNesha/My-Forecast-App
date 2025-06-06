@@ -57,8 +57,8 @@ footer {
 }
 
 .weather_container {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  text-align: center;
 }
 
 .current_city {
@@ -66,6 +66,7 @@ footer {
   font-size: 38px;
   line-height: 48px;
   color: white;
+  padding-top: 30px;
 }
 
 .weather_info {
@@ -75,9 +76,10 @@ footer {
 }
 
 .temp_number {
-  font-size: 88px;
+  font-size: 98px;
   font-weight: 700;
   color: white;
+  margin: 40px;
 }
 
 .temp_icon {
@@ -85,9 +87,19 @@ footer {
 }
 
 .temp_unit {
-  font-size: 18px;
+  font-size: 20px;
   position: absolute;
-  margin-top: 20px;
   font-weight: 600;
   color: white;
+  margin-left: -40px;
+  margin-top: 15px;
+}
+
+.current_temp {
+  border: 8px solid lightgray;
+  border-radius: 80%;
+  padding: 0px;
+  width: 200px;
+  height: 200px;
+  margin-left: 150px;
 }
