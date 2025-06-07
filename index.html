@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/index.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Raincheck Please</title>
   </head>
   <body>
@@ -25,10 +26,10 @@
           <div>
             <div class="current_temp">
               <span class="temp_icon">🌤️</span>
-              <span class="temp_number">12</span
+              <span class="temp_number" id="temp-number"></span
               ><span class="temp_unit"><sup>°F</sup></span>
             </div>
-            <h1 class="current_city" id="city">Indianapolis</h1>
+            <h1 class="current_city" id="city"></h1>
             <p class="weather_info">
               Tuesday 14:49, scattered clouds
               <br />
