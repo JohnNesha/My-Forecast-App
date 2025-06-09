@@ -15,6 +15,10 @@ a {
   color: #8ef6e4;
 }
 
+strong {
+  color: darkmagenta;
+}
+
 .weather_app {
   background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
   max-width: 600px;
@@ -76,14 +80,14 @@ footer {
 }
 
 .temp_number {
-  font-size: 98px;
+  font-size: 100px;
   font-weight: 700;
   color: white;
-  margin: 40px;
+  margin: 0 40px;
 }
 
 .temp_icon {
-  font-size: 44px;
+  font-size: 32px;
 }
 
 .temp_unit {
@@ -99,7 +103,7 @@ footer {
   border: 8px solid lightgray;
   border-radius: 80%;
   padding: 0px;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin-left: 150px;
 }
