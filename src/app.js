@@ -11,12 +11,12 @@ function currentWeather(response) {
 
   cityElement.innerHTML = response.data.city;
 
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}"  class="temp_icon" />`;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
-  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}"  class="temp_icon" />`;
 }
 
 function formatDate(date) {
