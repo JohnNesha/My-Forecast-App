@@ -53,7 +53,31 @@ function lookupCity(event) {
   searchEnteredCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Tues", "Weds", "Thurs", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+    <div class="weather_forecast_day">
+            <div class="weather_forecast_date">${day}</div>
+            <div class="weather_forecast_icon">🌤️</div>
+            <div class="weather_forecast_temps">
+              <div class="weather_forecast_temp"><strong>15°</strong></div>
+              <div class="weather_forecast_temp">9°</div>
+            </div>
+            </div>
+    `;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let citySearch = document.querySelector("#search-form");
 citySearch.addEventListener("submit", lookupCity);
 
 searchEnteredCity("Indianapolis");
+displayForecast();
