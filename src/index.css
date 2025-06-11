@@ -117,8 +117,10 @@ footer {
 }
 
 .weather_forecast_icon {
-  text-align: center;
-  font-size: 38px;
+  width: 55px;
+  height: 55px;
+  display: block;
+  margin: 0 auto;
 }
 
 .weather_forecast_temps {
@@ -130,7 +132,7 @@ footer {
 }
 
 .weather_forecast_temp {
-  padding: 0 10px;
+  padding: 0 6px;
 }
 
 .weather_forecast {
